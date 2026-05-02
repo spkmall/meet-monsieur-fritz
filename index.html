@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive about-me profile for Monsieur Fritz, French teacher at Troy High School.">
+  <title>Meet Monsieur Fritz</title>
+  <link rel="preload" as="image" href="assets/hero-bbq-portrait.jpg">
+  <link rel="preload" as="image" href="assets/grand-staircase.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-meter" aria-hidden="true"><span></span></div>
+
+  <header class="site-head">
+    <a class="brand" href="#top" aria-label="Meet Monsieur Fritz home">
+      <span class="brand__lamp" aria-hidden="true"></span>
+      <span>Fritz<span>/</span>FR</span>
+    </a>
+    <nav class="nav" aria-label="Profile navigation">
+      <a href="#story">Dossier</a>
+      <a href="#worlds">Worlds</a>
+      <a href="#gallery">Photos</a>
+      <a href="#philosophy">Philosophy</a>
+    </nav>
+    <button class="motion-switch" type="button" aria-pressed="false">
+      <span aria-hidden="true"></span>
+      Motion
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__noise" aria-hidden="true"></div>
+      <div class="hero__copy">
+        <p class="eyebrow reveal"><span></span> Qui suis-je? / Room 326 / 2025-26</p>
+        <h1 id="hero-title" class="hero__title reveal">
+          <span>Meet</span>
+          <span>Monsieur</span>
+          <span>Fritz.</span>
+        </h1>
+        <p class="hero__lede reveal">
+          French teacher, linguist, former restaurant pro, tennis coach, scout dad,
+          brisket scientist, Green Lantern lifer, and the kind of teacher who wants
+          to be invited to the weddings.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#worlds">Enter the dossier</a>
+          <a class="btn btn--ghost" href="#gallery">See the photos</a>
+        </div>
+      </div>
+
+      <div class="photo-stage reveal" data-tilt>
+        <figure class="photo-panel photo-panel--main" data-float="12">
+          <img src="assets/hero-bbq-portrait.jpg" alt="Monsieur Fritz enjoying barbecue ribs">
+          <figcaption>Former restaurant pro. Still very serious about smoke.</figcaption>
+        </figure>
+        <figure class="photo-panel photo-panel--trip" data-float="-9">
+          <img src="assets/grand-staircase.jpg" alt="Monsieur Fritz standing in a canyon landscape with arms open">
+        </figure>
+        <figure class="photo-panel photo-panel--family" data-float="7">
+          <img src="assets/family-bottle-tree.jpg" alt="The Fritz family at Elmer's Bottle Tree Ranch">
+        </figure>
+        <div class="lantern-badge" aria-label="Green Lantern inspired badge">
+          <img src="assets/lantern.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="stat-strip" aria-label="Quick facts">
+      <article class="stat reveal">
+        <span>29th</span>
+        <p>year in education</p>
+      </article>
+      <article class="stat reveal">
+        <span>18</span>
+        <p>restaurant years before teaching</p>
+      </article>
+      <article class="stat reveal">
+        <span>326</span>
+        <p>Troy High School French room</p>
+      </article>
+      <article class="stat reveal">
+        <span>3x</span>
+        <p>league champion tennis coach</p>
+      </article>
+    </section>
+
+    <section id="story" class="section story" aria-labelledby="story-title">
+      <div class="section__intro reveal">
+        <p class="section-kicker">01 / Dossier</p>
+        <h2 id="story-title">The Monsieur multiverse.</h2>
+      </div>
+      <ol class="casefiles" aria-label="Monsieur Fritz case files">
+        <li class="casefile casefile--big reveal is-open" tabindex="0" role="button" aria-pressed="true" data-casefile style="--image: url('assets/dino-rib.jpg'); --accent: var(--heat);">
+          <span class="casefile__no">01</span>
+          <span class="casefile__tag">Kitchen File</span>
+          <h3>Eighteen restaurant years</h3>
+          <p>Food service, food management, smoke, salt, patience, and the sacred math of low-and-slow.</p>
+          <span class="casefile__more">Before teaching found him, the kitchen taught him timing.</span>
+        </li>
+        <li class="casefile reveal" tabindex="0" role="button" aria-pressed="false" data-casefile style="--image: url('assets/lantern.svg'); --accent: var(--green);">
+          <span class="casefile__no">02</span>
+          <span class="casefile__tag">Language Lab</span>
+          <h3>French plus linguistics</h3>
+          <p>Lewis &amp; Clark, French studies, cognitive psycholinguistics, and language acquisition.</p>
+          <span class="casefile__more">The grammar is alive. The brain is doing choreography.</span>
+        </li>
+        <li class="casefile casefile--tall reveal" tabindex="0" role="button" aria-pressed="false" data-casefile style="--image: url('assets/family-table.jpg'); --accent: var(--sky);">
+          <span class="casefile__no">03</span>
+          <span class="casefile__tag">Room 326</span>
+          <h3>Twenty-ninth year teaching</h3>
+          <p>Guest teacher, Spanish/French roles, program rebuilder, trip leader, and full-time Troy presence.</p>
+          <span class="casefile__more">The classroom is the main stage, but never the whole show.</span>
+        </li>
+        <li class="casefile reveal" tabindex="0" role="button" aria-pressed="false" data-casefile style="--image: url('assets/family-bottle-tree.jpg'); --accent: var(--green-hot);">
+          <span class="casefile__no">04</span>
+          <span class="casefile__tag">Home Base</span>
+          <h3>Layla, Abner, Elias</h3>
+          <p>Husband, father, Little League coach, and the person who chose presence over the sideline.</p>
+          <span class="casefile__more">Best decision: stepping back so the people at home got the front row.</span>
+        </li>
+        <li class="casefile reveal" tabindex="0" role="button" aria-pressed="false" data-casefile style="--image: url('assets/canyon-family.jpg'); --accent: var(--heat);">
+          <span class="casefile__no">05</span>
+          <span class="casefile__tag">Scout Mode</span>
+          <h3>Assistant Scout Master</h3>
+          <p>Helping Elias stay on the path to Eagle, collecting camp stories, and proving food follows him anywhere.</p>
+          <span class="casefile__more">Every campfire is secretly a culinary curriculum.</span>
+        </li>
+        <li class="casefile casefile--wide reveal" tabindex="0" role="button" aria-pressed="false" data-casefile style="--image: url('assets/grand-staircase.jpg'); --accent: var(--sky);">
+          <span class="casefile__no">06</span>
+          <span class="casefile__tag">Beta Test</span>
+          <h3>Still trying the new thing</h3>
+          <p>Emerging tech, new French methods, weird apps, better tools, and the courage to experiment out loud.</p>
+          <span class="casefile__more">If it works, great. If not, at least the class got a story.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="worlds" class="section worlds" aria-labelledby="worlds-title">
+      <div class="section__intro reveal">
+        <p class="section-kicker">02 / Worlds</p>
+        <h2 id="worlds-title">Pick a frequency.</h2>
+      </div>
+      <div class="worlds__layout">
+        <div class="worlds__panel reveal" aria-live="polite">
+          <figure>
+            <img id="world-image" src="assets/dino-rib.jpg" alt="Barbecue beef rib closeup">
+          </figure>
+          <div class="worlds__copy">
+            <p id="world-meta">06h00 / 225 degrees / post oak</p>
+            <h3 id="world-title">Le Chef</h3>
+            <p id="world-copy">The Dino rib gets logged like a lab report: six hours low, then higher until 208 inside, rested, judged, remembered.</p>
+          </div>
+        </div>
+        <div class="world-tabs reveal" role="tablist" aria-label="Choose a profile world">
+          <button class="world-tab is-active" type="button" role="tab" aria-selected="true" data-world="chef">Le Chef</button>
+          <button class="world-tab" type="button" role="tab" aria-selected="false" data-world="prof">Le Prof</button>
+          <button class="world-tab" type="button" role="tab" aria-selected="false" data-world="family">La Famille</button>
+          <button class="world-tab" type="button" role="tab" aria-selected="false" data-world="road">Grand Staircase</button>
+          <button class="world-tab" type="button" role="tab" aria-selected="false" data-world="coach">Coach</button>
+          <button class="world-tab" type="button" role="tab" aria-selected="false" data-world="lantern">Green Lantern</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery" aria-labelledby="gallery-title">
+      <div class="section__intro reveal">
+        <p class="section-kicker">03 / Photo Evidence</p>
+        <h2 id="gallery-title">Drag the contact sheet.</h2>
+      </div>
+      <div class="photo-rail reveal" data-drag-scroll>
+        <figure class="rail-card rail-card--tall">
+          <img src="assets/family-bottle-tree.jpg" alt="The Fritz family at Elmer's Bottle Tree Ranch">
+          <figcaption>Route 66, 2018</figcaption>
+        </figure>
+        <figure class="rail-card">
+          <img src="assets/family-table.jpg" alt="Family dinner at Crabby Bill's">
+          <figcaption>Crabby Bill's, July 2022</figcaption>
+        </figure>
+        <figure class="rail-card rail-card--square">
+          <img src="assets/dino-rib.jpg" alt="Smoked beef rib on a board">
+          <figcaption>Dino rib experiment</figcaption>
+        </figure>
+        <figure class="rail-card">
+          <img src="assets/smoked-ribs.jpg" alt="Smoked ribs on a cutting board">
+          <figcaption>Smoke ring research</figcaption>
+        </figure>
+        <figure class="rail-card rail-card--wide">
+          <img src="assets/bryce-family.jpg" alt="Family selfie in a canyon landscape">
+          <figcaption>Bryce Canyon run</figcaption>
+        </figure>
+        <figure class="rail-card rail-card--wide">
+          <img src="assets/canyon-family.jpg" alt="Family in front of a canyon wall">
+          <figcaption>Grand Staircase, out of order</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="philosophy" class="philosophy" aria-labelledby="philosophy-title">
+      <div class="philosophy__inner reveal">
+        <p class="section-kicker">04 / Teaching Philosophy</p>
+        <h2 id="philosophy-title">All students can acquire a second language.</h2>
+        <p>
+          Show up, participate, commit, and progress follows. The classroom works best
+          when students and teacher learn from each other, make room for curiosity,
+          and have enough fun to keep trying.
+        </p>
+      </div>
+    </section>
+
+    <section class="closer" aria-label="Closing note">
+      <div class="closer__image reveal">
+        <img src="assets/grand-staircase.jpg" alt="Monsieur Fritz in a canyon landscape">
+      </div>
+      <div class="closer__copy reveal">
+        <p class="section-kicker">Final Panel</p>
+        <blockquote>
+          "I always tell my students I want to dance at their weddings."
+        </blockquote>
+        <p class="closer__meta">Monsieur Fritz &middot; Troy High School French &middot; @monsieurleprof</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
